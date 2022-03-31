@@ -521,7 +521,7 @@ dependencies = [
 ]
 
 [[package]]
-name = "wasi-keys"
+name = "wasi-keep"
 version = "0.1.0"
 dependencies = [
  "anyhow",

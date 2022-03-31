@@ -6,7 +6,7 @@ mod keys;
 
 #[tokio::main]
 async fn main() -> Result<(), anyhow::Error> {
-    let matches = Command::new("wasi-keys")
+    let matches = Command::new("wasi-keep")
         .version("0.1")
         .author("Luke Hinds")
         .about("wasm key keep")
