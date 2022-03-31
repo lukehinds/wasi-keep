@@ -1,0 +1,17 @@
+[package]
+name = "wasi-keys"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+anyhow = "1.0"
+base64 = "0.13.0"
+clap = "3.0.10"
+sodiumoxide = "0.2.7"
+tokio = { version = "1", features = ["rt-multi-thread", "macros"] }
+rpassword = "5.0.1"
+ecdsa = { version = "0.13.4", features = ["verify", "pem", "der", "pkcs8"] }
+#[cfg(not(target_os = "windows"))]
+openssl = "0.10.38"
